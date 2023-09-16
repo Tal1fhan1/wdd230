@@ -96,6 +96,8 @@ nav a {
     margin: 0px;
     text-align: center;
     padding: 10px;
+    color: white;
+    text-decoration: none;
 }
 
 nav a:hover {
