@@ -14,8 +14,7 @@ h1 {
     margin-left: 25px;
 }
 
-h2,
-nav a {
+h2 {
     font-family: "Montserrat", Arial, sans-serif;
 }
 
@@ -93,6 +92,7 @@ footer {
 }
 
 nav a {
+    font-family: "Montserrat", Arial, sans-serif;
     margin: 0px;
     text-align: center;
     padding: 10px;
