@@ -12,6 +12,7 @@ h1 {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 25px;
+    font-size: 1.5rem;
 }
 
 h2 {
@@ -29,11 +30,12 @@ h3 {
     padding: 10px;
 }
 
+.navigation,
 nav {
     background-color: #040404;
     color: white;
     display: grid;
-
+    text-decoration: none;
     margin: 0px;
 }
 
@@ -85,21 +87,61 @@ main {
 
 footer {
     text-align: center;
-    background-color: darkgoldenrod;
+    background-color: rgb(151, 110, 5);
     color: white;
     font-family: "Kanit", Helvetica, sans-serif;
     padding: 1px;
 }
 
-nav a {
+.navigation {
     font-family: "Montserrat", Arial, sans-serif;
     margin: 0px;
     text-align: center;
-    padding: 10px;
+    padding: 0px;
     color: white;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
 }
 
-nav a:hover {
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav li:hover {
     background-color: blue;
+}
+
+.navigation li {
+    display: none;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, .3);
+    padding: .25rem .75rem;
+    background-color: #eee;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+.open li {
+    display: block;
+    width: 100%;
+}
+
+.open li a {
+    display: block;
 }
