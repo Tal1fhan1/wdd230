@@ -101,7 +101,7 @@
     }
 
     .navigation li {
-        display: none;
+        display: contents;
     }
 
     #menu {
