@@ -24,7 +24,7 @@
 
 <body>
     <header>
-        <img src="images/profile-picture.jpg" alt="My profile picture" width="189" height="192">
+        <img src="images/profile-picture.webp" alt="My profile picture" width="189" height="192">
         <h1>Talifhani T. Netshiheni</h1>
         <div id="mode">
             ☑️
@@ -40,6 +40,17 @@
         </ul>
     </nav>
     <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+                <img src="images/hero-large.webp" alt="Durban South Africa Temple" width="840" height="555">
+            </picture>
+            <div class="herolabel">
+                <p>Durban South Africa Temple</p>
+            </div>
+        </div>
+
         <h2 class="heading">WDD 230: Web Frontend Development</h2>
         <section class="card1">
             <h3>Learning Activities</h3>
@@ -61,9 +72,9 @@
                 <li>Week 03:
                     <a href="week03/images/landscape.webp">WebP</a>
                     <a>|</a>
-                    <a href="https://tal1fhan1.github.io/wdd230/week03/lazyload.html">Lazy Loading</a>
+                    <a href="https://tal1fhan1.github.io/wdd230/week03/lazyload.html">Lazy</a>
                     <a>|</a>
-                    <a href="https://tal1fhan1.github.io/wdd230/week03/responsive-images.html">Responsive Images</a>
+                    <a href="https://tal1fhan1.github.io/wdd230/week03/responsive-images.html">srcset</a>
                     <a>|</a>
                     <a href="https://tal1fhan1.github.io/wdd230/week03/bom.html">localStorage</a>
 
@@ -78,8 +89,12 @@
             <h3>Information</h3>
             <p>Johannesburg, South Africa</p>
             <p>19&#x2103; Overcast</p>
-            <p>Page Visits : 15</p>
+            <p><span class="label">Page Visits: </span><span class="visits"></span></p>
         </section>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5035.4931794354125!2d28.22380351386788!3d-26.071346073069197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956b4a4eba1ea1%3A0xf6f800e280b80e70!2sEngen%20Birchleigh%20Convenience!5e0!3m2!1sen!2ske!4v1695932982117!5m2!1sen!2ske"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
     <footer>
         <p>&copy;<span id="year"></span> Talifhani Thabelo Netshiheni South Africa</p>
