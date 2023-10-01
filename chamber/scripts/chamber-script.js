@@ -25,11 +25,12 @@ if (lastVisit === null) {
     window.localStorage.setItem("lastVisit", milliseconds)
     let dayDifference = theDateToday.getTime() - lastVisit;
     const conversion = dayDifference / msToDays
+    console.log(conversion)
     if (conversion < 1) {
         const message2 = "Back so soon! Awesome!";
         document.querySelector('#visited').textContent = message2;
     }
-    else if (conversion == 1) {
+    else if (Math.round(conversion) == 1) {
         const message3 = "You last visited " + Math.round(conversion).toString() + " day ago";
         document.querySelector('#visited').textContent = message3;
     }
