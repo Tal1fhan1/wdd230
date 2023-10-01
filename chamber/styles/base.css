@@ -136,3 +136,39 @@ section {
     margin-top: 20px;
     color: #FEFCFD;
 }
+
+.block1,
+.block2 {
+    border: 2px solid black;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto auto;
+}
+
+#page img {
+    width: 100%;
+    height: auto;
+}
+
+#page img:hover {
+    box-shadow: 0 0 50px #333;
+    opacity: .8;
+}
+
+#page {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.caption {
+    text-align: center;
+    color: #3B3355;
+    text-decoration: underline;
+}
