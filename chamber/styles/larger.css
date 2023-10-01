@@ -135,4 +135,15 @@
     #menu {
         display: none;
     }
+
+    #grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    #page img:hover {
+        box-shadow: 0 0 50px #333;
+        opacity: .8;
+    }
 }

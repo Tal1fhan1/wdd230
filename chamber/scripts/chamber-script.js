@@ -9,3 +9,35 @@ hamButton.addEventListener('click', () => {
     hamButton.classList.toggle('open');
 });
 
+const msToDays = 84600000;
+
+const theDateToday = new Date();
+const milliseconds = theDateToday.getTime()
+
+const message1 = "Welcome! Let us know if you have any questions."
+
+let lastVisit = window.localStorage.getItem("lastVisit")
+
+if (lastVisit === null) {
+    document.querySelector("#visited").textContent = message1;
+    window.localStorage.setItem("lastVisit", milliseconds)
+} else {
+    window.localStorage.setItem("lastVisit", milliseconds)
+    let dayDifference = theDateToday.getTime() - lastVisit;
+    const conversion = dayDifference / msToDays
+    if (conversion < 1) {
+        const message2 = "Back so soon! Awesome!";
+        document.querySelector('#visited').textContent = message2;
+    }
+    else if (conversion == 1) {
+        const message3 = "You last visited " + Math.round(conversion).toString() + " day ago";
+        document.querySelector('#visited').textContent = message3;
+    }
+    else {
+        const message4 = "You last visited " + Math.round(conversion).toString() + " days ago";
+        document.querySelector('#visited').textContent = message4;
+    }
+}
+
+
+
