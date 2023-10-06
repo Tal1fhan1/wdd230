@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital@1&family=Montserrat:wght@300&display=swap');
+
+
+:root {
+    background-color: white;
+    font-family: "Kanit", Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+#formmessage {
+    visibility: none;
+    margin: 10px;
+    padding: 0.5rem;
+    color: red;
+}
+
+#pass:invalid {
+    background-color: #fff0f3;
+    animation: shaketext 500ms;
+}
+
+@keyframes shaketext {
+    25% {
+        transform: translateX(3px);
+    }
+
+    50% {
+        transform: translateX(-3px);
+    }
+
+    75% {
+        transform: translateX(3px);
+    }
+}
+
+input,
+textarea,
+select {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+form {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.submitBtn:hover {
+    background-color: rgb(151, 110, 5);
+    color: white;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: darkgoldenrod;
+    color: white;
+    font-family: "Kanit", Helvetica, sans-serif;
+    display: flex;
+}
+
+h1 {
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 25px;
+    font-size: 1.5rem;
+}
+
+h2,
+.submitBtn {
+    font-family: "Montserrat", Arial, sans-serif;
+}
+
+.navigation,
+nav {
+    background-color: #040404;
+    color: white;
+    display: grid;
+    text-decoration: none;
+    margin: 0px;
+}
+
+.navigation {
+    font-family: "Montserrat", Arial, sans-serif;
+    margin: 0px;
+    text-align: center;
+    padding: 0px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav li:hover {
+    background-color: blue;
+}
+
+.navigation li {
+    display: none;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, .3);
+    padding: .25rem .75rem;
+    background-color: #eee;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+.open li {
+    display: block;
+    width: 100%;
+}
+
+.open li a {
+    display: block;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(151, 110, 5);
+    color: white;
+    font-family: "Kanit", Helvetica, sans-serif;
+    padding: 1px;
+}
+
+
+@media (min-width: 500px) {
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        background-color: #040404;
+        color: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 0px;
+    }
+
+    nav {
+        font-family: "Montserrat", Arial, sans-serif;
+        margin: 0px;
+        text-align: center;
+        padding: 0px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .navigation a:hover {
+        background-color: blue;
+    }
+
+    .navigation a {
+        padding: 10px;
+    }
+
+    .navigation li {
+        display: contents;
+    }
+
+    #mode {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 3rem;
+        cursor: pointer;
+    }
+}
