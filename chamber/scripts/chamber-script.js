@@ -40,5 +40,6 @@ if (lastVisit === null) {
     }
 }
 
-document.querySelector("#time").textContent = theDateToday
+const today = new Date()
+document.querySelector("#time").textContent = today
 
