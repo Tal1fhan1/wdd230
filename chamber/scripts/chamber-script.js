@@ -13,7 +13,6 @@ const msToDays = 84600000;
 
 const theDateToday = new Date();
 const milliseconds = theDateToday.getTime()
-document.querySelector("#time").textContent = theDateToday
 
 const message1 = "Welcome! Let us know if you have any questions."
 
@@ -41,5 +40,5 @@ if (lastVisit === null) {
     }
 }
 
-
+document.querySelector("#time").textContent = theDateToday
 
