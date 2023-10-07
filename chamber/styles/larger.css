@@ -39,6 +39,48 @@
         color: white;
     }
 
+    .sbs {
+        display: block;
+        padding: .5rem 0;
+        color: #555;
+    }
+
+    form label.sbs {
+        padding: .4rem 0;
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    fieldset {
+        grid-column: 1;
+    }
+
+    .submitBtn {
+        width: 50%;
+        margin-left: 10px;
+        margin-top: 20px;
+        background-color: #3B3355;
+        color: white;
+        grid-column: 1;
+    }
+
+    #thankyou {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    div #benefits {
+        grid-column: 2;
+        grid-row: 2;
+        margin-top: 25px;
+        font-family: "Kanit", Arial, sans-serif;
+        font-size: 1.5rem;
+    }
+
     .card2 {
         border: 2px solid black;
         text-align: center;
@@ -146,4 +188,6 @@
         box-shadow: 0 0 50px #333;
         opacity: .8;
     }
+
+
 }

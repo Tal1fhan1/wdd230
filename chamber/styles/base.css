@@ -176,3 +176,63 @@ section {
     margin-bottom: 25px;
     margin-top: 25px;
 }
+
+fieldset {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: "Kanit", Arial, sans-serif;
+}
+
+#thankyou {
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+input,
+textarea,
+select {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+form {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.submitBtn {
+    width: 50%;
+    margin-left: 10px;
+    margin-top: 20px;
+    background-color: #3B3355;
+    color: white;
+}
+
+div #benefits {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: "Kanit", Arial, sans-serif;
+    font-size: 1.2rem;
+}
+
+.submitBtn:hover {
+    background-color: #5D5D81;
+    color: white;
+}
+
+.sbs {
+    display: block;
+    padding: .5rem 0;
+    color: #555;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-family: "Space Mono", Arial, sans-serif;
+}
