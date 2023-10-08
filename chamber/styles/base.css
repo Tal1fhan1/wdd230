@@ -48,13 +48,15 @@ nav a {
 }
 
 h2 {
-    margin-top: 50px;
+
     font-family: "Space Mono", Arial, sans-serif;
-    color: #3B3355;
+
 }
 
 h1 {
     font-family: "Space Mono", Arial, sans-serif;
+    color: #3B3355;
+    margin-top: 50px;
 }
 
 p {
@@ -167,6 +169,7 @@ section {
     margin-left: 10px;
     margin-bottom: 10px;
     padding: 25px;
+    font-size: 25px;
 }
 
 .caption {
