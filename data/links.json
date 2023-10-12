@@ -1,0 +1,101 @@
+{
+    "weeks": [
+        {
+            "week": "Week 1",
+            "links": [
+                {
+                    "url": "week01/holygrail.html",
+                    "title": "HG Layout"
+                },
+                {
+                    "url": "week01/media-query.html",
+                    "title": "Media Query"
+                },
+                {
+                    "url": "https://codepen.io/Tal1fhan1/full/gOZRYVg",
+                    "title": "JS Pen"
+                }
+            ]
+        },
+        {
+            "week": "Week 2",
+            "links": [
+                {
+                    "url": "https://tal1fhan1.github.io/wdd230/week02/design.html",
+                    "title": "Design Principles"
+                },
+                {
+                    "url": "https://codepen.io/Tal1fhan1/pen/gOZXzXx",
+                    "title": "CodePen"
+                },
+                {
+                    "url": "https://tal1fhan1.github.io/wdd230/week02/bom.html",
+                    "title": "DOM Manipulation"
+                }
+            ]
+        },
+        {
+            "week": "Week 3",
+            "links": [
+                {
+                    "url": "week03/images/landscape.webp",
+                    "title": "WebP"
+                },
+                {
+                    "url": "https://tal1fhan1.github.io/wdd230/week03/lazyload.html",
+                    "title": "Lazy"
+                },
+                {
+                    "url": "https://tal1fhan1.github.io/wdd230/week03/responsive-images.html",
+                    "title": "Srcset"
+                },
+                {
+                    "url": "https://tal1fhan1.github.io/wdd230/week03/bom.html",
+                    "title": "localStorage"
+                }
+            ]
+        },
+        {
+            "week": "Week 4",
+            "links": [
+                {
+                    "url": "https://codepen.io/Tal1fhan1/pen/bGOmagK",
+                    "title": "CSS Psuedo-Classes"
+                },
+                {
+                    "url": "week04/images/screenshot.png",
+                    "title": "CSS Combinator"
+                },
+                {
+                    "url": "week04/tablebuild.html",
+                    "title": "HTML Tables"
+                },
+                {
+                    "url": "week04/form-start/index.html",
+                    "title": "HTML Forms"
+                }
+            ]
+        },
+        {
+            "week": "Week 5",
+            "links": [
+                {
+                    "url": "https://codepen.io/Tal1fhan1/pen/BavMMpY?editors=0100",
+                    "title": "CSS Psuedo-Elements"
+                },
+                {
+                    "url": "week05/new-ward-members.json",
+                    "title": "JSON"
+                },
+                {
+                    "url": "week05/new-ward-members.json",
+                    "title": "The Fetch API"
+                },
+                {
+                    "url": "week05/weather.html",
+                    "title": "Third-Party Weather API"
+                }
+            ]
+        }
+    ]
+}

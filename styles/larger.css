@@ -87,6 +87,10 @@
         margin-bottom: 3%;
     }
 
+    #weather-icon {
+        box-shadow: none;
+    }
+
     p {
         text-align: center;
     }
