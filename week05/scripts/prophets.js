@@ -4,8 +4,8 @@ const cards = document.querySelector('#cards');
 async function getProphetData(url) {
     const response = await fetch(url);
     const data = await response.json();
-    //console.table(data.prophets);
-    displayProphets(data.prophets); // note that we reference the prophets array of the JSON data object, not just the object
+    console.table(data.prophets);
+    displayProphets(data.prophets);
 }
 
 getProphetData(url);
@@ -13,21 +13,21 @@ getProphetData(url);
 const displayProphets = (prophets) => {
     prophets.forEach((prophet) => {
         let card = document.createElement('section');
-        let fullName = document.createElement('h2'); // fill in the blank
+        let fullName = document.createElement('h2');
         let portrait = document.createElement('img');
         let dateOfBirth = document.createElement('p');
         let placeOfBirth = document.createElement('p')
 
-        fullName.textContent = `${prophet.name} ${prophet.lastname}`; // fill in the blank
+        fullName.textContent = `${prophet.name} ${prophet.lastname}`;
         dateOfBirth.textContent = `${prophet.birthdate}`;
         placeOfBirth.textContent = `${prophet.birthplace}`;
         portrait.setAttribute('src', prophet.imageurl);
-        portrait.setAttribute('alt', `${prophet.name} ${prophet.lastname}`); // fill in the blank
+        portrait.setAttribute('alt', `${prophet.name} ${prophet.lastname}`);
         portrait.setAttribute('loading', 'lazy');
         portrait.setAttribute('width', '340');
         portrait.setAttribute('height', '440');
 
-        card.appendChild(fullName); //fill in the blank
+        card.appendChild(fullName);
         card.appendChild(dateOfBirth);
         card.appendChild(placeOfBirth)
         card.appendChild(portrait);

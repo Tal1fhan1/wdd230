@@ -1,30 +1,77 @@
 const baseURL = "https://tal1fhan1.github.io/wdd230/";
 const linksURL = "https://tal1fhan1.github.io/wdd230/data/links.json";
 
-async function getLinks() {
+async function getLinks(linksURL) {
     const response = await fetch(linksURL);
     const data = await response.json();
-    // displayLinks(data);
-    console.log(data);
+    console.log(data.weeks[0].week);
+    displayLinks(data.weeks);
+
 }
 
-getLinks(url);
+getLinks(linksURL);
 
-// const displayLinks = (links) => {
-//     links.forEach((link) => {
-//         let list = document.createElement('ul');
-//         let week = document.createElement('li'); // fill in the blank
-//         let content = document.createElement('a');
+const displayLinks = (weeks) => {
+    weeks.forEach((week) => {
+        let list = document.querySelector('.list');
+        let item = document.createElement('li');
+        let title1 = document.createElement('a');
+        let divide1 = document.createElement('a');
 
-//         content.textContent = `${link.title}`;
-//         portrait.setAttribute('height', '440');
-//         content.setAttribute('href', `${link.url}`)
+        let title2 = document.createElement('a');
+        let divide2 = document.createElement('a');
 
-//         card.appendChild(fullName); //fill in the blank
-//         card.appendChild(dateOfBirth);
-//         card.appendChild(placeOfBirth)
-//         card.appendChild(portrait);
+        let title3 = document.createElement('a');
+        let divide3 = document.createElement('a');
 
-//         cards.appendChild(card);
-//     });
-// }
+        title1.textContent = `${week.links[0].title}`
+        divide1.textContent = ' | '
+        title1.setAttribute('href', `${week.links[0].url}`)
+
+        item.textContent = `${week.week}: `
+        title2.textContent = `${week.links[1].title}`
+        divide2.textContent = ' | '
+        title2.setAttribute('href', `${week.links[1].url}`)
+
+        title3.textContent = `${week.links[2].title}`
+        divide3.textContent = ' | '
+        title3.setAttribute('href', `${week.links[2].url}`)
+
+        item.appendChild(title1);
+        item.appendChild(divide1)
+        list.appendChild(item)
+
+        item.appendChild(title2);
+        item.appendChild(divide2)
+        list.appendChild(item)
+
+        item.appendChild(title3);
+        item.appendChild(divide3)
+        list.appendChild(item)
+
+        if (`${week.week}` == 'Week 3') {
+            let title4 = document.createElement('a');
+            title4.textContent = `${week.links[3].title}`
+            title4.setAttribute('href', `${week.links[3].url}`)
+            item.appendChild(title4);
+            list.appendChild(item);
+        }
+        else if (`${week.week}` == 'Week 4') {
+            let title4 = document.createElement('a');
+            title4.textContent = `${week.links[3].title}`
+            title4.setAttribute('href', `${week.links[3].url}`)
+            item.appendChild(title4);
+            list.appendChild(item);
+        }
+        else if (`${week.week}` == 'Week 5') {
+            let title4 = document.createElement('a');
+            let divide4 = document.createElement('a');
+            title4.textContent = `${week.links[3].title}`
+            title4.setAttribute('href', `${week.links[3].url}`)
+            item.appendChild(title4);
+            list.appendChild(item);
+        }
+    });
+}
+
+
