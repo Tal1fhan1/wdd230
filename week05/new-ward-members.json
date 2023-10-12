@@ -1,0 +1,23 @@
+{
+    "familyName": "Johnson",
+    "moved": 2010,
+    "numRecords": 3,
+    "visited": true,
+    "familyMembers": [
+        {
+            "name": "Jasmine",
+            "gender": "female",
+            "birthdate": "02/02/2002"
+        },
+        {
+            "name": "Tobey",
+            "gender": "male",
+            "birthdate": "04/05/2000"
+        },
+        {
+            "name": "Christopher",
+            "gender": "male",
+            "birthdate": "01/11/1998"
+        }
+    ]
+}
