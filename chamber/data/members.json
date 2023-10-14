@@ -1,0 +1,64 @@
+{
+    "members": [
+        {
+            "company": [
+                {
+                    "name": "H&M",
+                    "address": "Shop 94, Highveld Mall, Cnr N4 highway &, Mandela St, Emalahleni, 1035, South Africa",
+                    "phone": "+27 860 690 707",
+                    "website": "https://www.hmssouthafrica.co.za/",
+                    "membership": "Gold",
+                    "logo": "images/h&m-logo.webp"
+                },
+                {
+                    "name": "Markham",
+                    "address": "Blue Haze Centre, 538, Mpumalanga, 1242, South Africa",
+                    "phone": "+27 13 737 3534",
+                    "website": "https://bash.com/markham",
+                    "membership": "Silver",
+                    "logo": "images/markham-logo.webp"
+                },
+                {
+                    "name": "Lime Juice Communication",
+                    "address": "19 Magenta St, Rivergate Estate, Mbombela, 1200, South Africa",
+                    "phone": ":+27 87 135 3333",
+                    "website": "https://limejuice.co.za/?utm_source=Tech-Behemoths&utm_medium=Profile&utm_campaign=viewprofile",
+                    "membership": "Silver",
+                    "logo": "images/lime-juice-logo.webp"
+                },
+                {
+                    "name": "Mpumalanga Chemicals",
+                    "address": "20 Streak St, Mbombela, 1200, South Africa",
+                    "phone": "+27 13 752 5151",
+                    "website": "https://mpumalangachemicalscc.business.site/",
+                    "membership": "Bronze",
+                    "logo": "images/mpumalanga-chemicals-logo.webp"
+                },
+                {
+                    "name": "Incredible Connection",
+                    "address": "Shop LG 52A, Ilanga Mall Cnr of Bitterbessie &, Flamboyant St, N 4, Mbombela, 1200, South Africa",
+                    "phone": "+27 10 133 1245",
+                    "website": "https://www.incredible.co.za/?utm_source=google&utm_medium=locations&utm_campaign=SP&utm_content=SP",
+                    "membership": "Gold",
+                    "logo": "images/incredible-connection-logo.webp"
+                },
+                {
+                    "name": "Checkers",
+                    "address": "Shop 1, The Oak Centre, 131A Kerk St, Ermelo, 2350, South Africa",
+                    "phone": "+27 17 811 0960",
+                    "website": "https://www.checkers.co.za/",
+                    "membership": "Gold",
+                    "logo": "images/checkers-logo.webp"
+                },
+                {
+                    "name": "Woolworths",
+                    "address": "Cnr Bester & Paul Kruger, Nelspruit Cbd, Mbombela, 1200, South Africa",
+                    "phone": "+27 13 756 9040",
+                    "website": "https://www.woolworths.co.za/?utm_source=google&utm_medium=organic&utm_content=nelspruit&utm_campaign=places",
+                    "membership": "Gold",
+                    "logo": "images/woolworths-logo.webp"
+                }
+            ]
+        }
+    ]
+}
