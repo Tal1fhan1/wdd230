@@ -1,4 +1,3 @@
-const url = 'https://www.nchsoftware.com/photoeditor/screenshots/photopadscreen-3.jpg'
 const membersURL = "https://tal1fhan1.github.io/wdd230/chamber/data/members.json";
 
 async function getMembers(membersURL) {
@@ -88,10 +87,10 @@ const displayMembers = (members) => {
         address1.textContent = `${member.companies[0].address}`;
         phone1.textContent = `${member.companies[0].phone}`;
         website1.textContent = `${member.companies[0].website}`;
-        website1.setAttribute = ('href', `${member.companies[0].website}`);
+        website1.setAttribute = ('href', member.companies[0].website);
         membership1.textContent = `Membership: ${member.companies[0].membership}`;
-        logo1.setAttribute = ('src', url);
-        logo1.setAttribute = ('alt', 'what?');
+        logo1.setAttribute('src', member.companies[0].logo);
+        logo1.setAttribute('alt', 'what?');
         div1.appendChild(logo1);
         div1.appendChild(name1);
         div1.appendChild(address1);
@@ -195,50 +194,6 @@ const displayMembers = (members) => {
         div7.appendChild(website7);
         div7.appendChild(membership7);
         section7.appendChild(div7);
-
-        // item.textContent = `${week.week}: `
-        // title2.textContent = `${week.links[1].title}`
-        // divide2.textContent = ' | '
-        // title2.setAttribute('href', `${week.links[1].url}`)
-
-        // title3.textContent = `${week.links[2].title}`
-        // divide3.textContent = ' | '
-        // title3.setAttribute('href', `${week.links[2].url}`)
-
-        // item.appendChild(title1);
-        // item.appendChild(divide1)
-        // list.appendChild(item)
-
-        // item.appendChild(title2);
-        // item.appendChild(divide2)
-        // list.appendChild(item)
-
-        // item.appendChild(title3);
-        // item.appendChild(divide3)
-        // list.appendChild(item)
-
-        // if (`${week.week}` == 'Week 3') {
-        //     let title4 = document.createElement('a');
-        //     title4.textContent = `${week.links[3].title}`
-        //     title4.setAttribute('href', `${week.links[3].url}`)
-        //     item.appendChild(title4);
-        //     list.appendChild(item);
-        // }
-        // else if (`${week.week}` == 'Week 4') {
-        //     let title4 = document.createElement('a');
-        //     title4.textContent = `${week.links[3].title}`
-        //     title4.setAttribute('href', `${week.links[3].url}`)
-        //     item.appendChild(title4);
-        //     list.appendChild(item);
-        // }
-        // else if (`${week.week}` == 'Week 5') {
-        //     let title4 = document.createElement('a');
-        //     let divide4 = document.createElement('a');
-        //     title4.textContent = `${week.links[3].title}`
-        //     title4.setAttribute('href', `${week.links[3].url}`)
-        //     item.appendChild(title4);
-        //     list.appendChild(item);
-        // }
     });
 }
 
