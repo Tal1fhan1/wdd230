@@ -19,7 +19,7 @@ const displayMembers = (members) => {
         let logo1 = document.createElement('img');
         let address1 = document.createElement('p');
         let phone1 = document.createElement('p');
-        let website1 = document.createElement('span');
+        let website1 = document.createElement('a');
         let membership1 = document.createElement('p');
 
         let section2 = document.getElementById('company');
@@ -29,7 +29,7 @@ const displayMembers = (members) => {
         let logo2 = document.createElement('img');
         let address2 = document.createElement('p');
         let phone2 = document.createElement('p');
-        let website2 = document.createElement('span');
+        let website2 = document.createElement('a');
         let membership2 = document.createElement('p');
 
         let section3 = document.getElementById('company');
@@ -39,7 +39,7 @@ const displayMembers = (members) => {
         let logo3 = document.createElement('img');
         let address3 = document.createElement('p');
         let phone3 = document.createElement('p');
-        let website3 = document.createElement('span');
+        let website3 = document.createElement('a');
         let membership3 = document.createElement('p');
 
         let section4 = document.getElementById('company');
@@ -49,7 +49,7 @@ const displayMembers = (members) => {
         let logo4 = document.createElement('img');
         let address4 = document.createElement('p');
         let phone4 = document.createElement('p');
-        let website4 = document.createElement('span');
+        let website4 = document.createElement('a');
         let membership4 = document.createElement('p');
 
         let section5 = document.getElementById('company');
@@ -59,7 +59,7 @@ const displayMembers = (members) => {
         let logo5 = document.createElement('img');
         let address5 = document.createElement('p');
         let phone5 = document.createElement('p');
-        let website5 = document.createElement('span');
+        let website5 = document.createElement('a');
         let membership5 = document.createElement('p');
 
         let section6 = document.getElementById('company');
@@ -69,7 +69,7 @@ const displayMembers = (members) => {
         let logo6 = document.createElement('img');
         let address6 = document.createElement('p');
         let phone6 = document.createElement('p');
-        let website6 = document.createElement('span');
+        let website6 = document.createElement('a');
         let membership6 = document.createElement('p');
 
         let section7 = document.getElementById('company');
@@ -79,7 +79,7 @@ const displayMembers = (members) => {
         let logo7 = document.createElement('img');
         let address7 = document.createElement('p');
         let phone7 = document.createElement('p');
-        let website7 = document.createElement('span');
+        let website7 = document.createElement('a');
         let membership7 = document.createElement('p');
 
 
@@ -87,10 +87,12 @@ const displayMembers = (members) => {
         address1.textContent = `${member.companies[0].address}`;
         phone1.textContent = `${member.companies[0].phone}`;
         website1.textContent = `${member.companies[0].website}`;
-        website1.setAttribute = ('href', member.companies[0].website);
+        website1.setAttribute('href', member.companies[0].website);
         membership1.textContent = `Membership: ${member.companies[0].membership}`;
         logo1.setAttribute('src', member.companies[0].logo);
-        logo1.setAttribute('alt', 'what?');
+        logo1.setAttribute('alt', `${member.companies[0].name} logo`);
+        logo1.setAttribute('width', '160px');
+        logo1.setAttribute('height', '106px');
         div1.appendChild(logo1);
         div1.appendChild(name1);
         div1.appendChild(address1);
@@ -103,10 +105,12 @@ const displayMembers = (members) => {
         address2.textContent = `${member.companies[1].address}`;
         phone2.textContent = `${member.companies[1].phone}`;
         website2.textContent = `${member.companies[1].website}`;
-        website2.setAttribute = ('href', `${member.companies[1].website}`);
+        website2.setAttribute('href', `${member.companies[1].website}`);
         membership2.textContent = `Membership: ${member.companies[1].membership}`;
-        logo2.setAttribute = ('src', url);
-        logo2.setAttribute = ('alt', 'what?');
+        logo2.setAttribute('src', member.companies[1].logo);
+        logo2.setAttribute('alt', `${member.companies[1].name} logo`);
+        logo2.setAttribute('width', '203px');
+        logo2.setAttribute('height', '114px');
         div2.appendChild(logo2);
         div2.appendChild(name2);
         div2.appendChild(address2);
@@ -119,10 +123,12 @@ const displayMembers = (members) => {
         address3.textContent = `${member.companies[2].address}`;
         phone3.textContent = `${member.companies[2].phone}`;
         website3.textContent = `${member.companies[2].website}`;
-        website3.setAttribute = ('href', `${member.companies[2].website}`);
-        membership1.textContent = `Membership: ${member.companies[2].membership}`;
-        logo3.setAttribute = ('src', url);
-        logo3.setAttribute = ('alt', 'what?');
+        website3.setAttribute('href', `${member.companies[2].website}`);
+        membership3.textContent = `Membership: ${member.companies[2].membership}`;
+        logo3.setAttribute('src', member.companies[2].logo);
+        logo3.setAttribute('alt', `${member.companies[2].name} logo`);
+        logo3.setAttribute('width', '125px');
+        logo3.setAttribute('height', '125px');
         div3.appendChild(logo3);
         div3.appendChild(name3);
         div3.appendChild(address3);
@@ -135,10 +141,12 @@ const displayMembers = (members) => {
         address4.textContent = `${member.companies[3].address}`;
         phone4.textContent = `${member.companies[3].phone}`;
         website4.textContent = `${member.companies[3].website}`;
-        website4.setAttribute = ('href', `${member.companies[3].website}`);
+        website4.setAttribute('href', `${member.companies[3].website}`);
         membership4.textContent = `Membership: ${member.companies[3].membership}`;
-        logo4.setAttribute = ('src', url);
-        logo4.setAttribute = ('alt', 'what?');
+        logo4.setAttribute('src', member.companies[3].logo);
+        logo4.setAttribute('alt', `${member.companies[3].name} logo`);
+        logo4.setAttribute('width', '217px');
+        logo4.setAttribute('height', '66px');;
         div4.appendChild(logo4);
         div4.appendChild(name4);
         div4.appendChild(address4);
@@ -151,10 +159,12 @@ const displayMembers = (members) => {
         address5.textContent = `${member.companies[4].address}`;
         phone5.textContent = `${member.companies[4].phone}`;
         website5.textContent = `${member.companies[4].website}`;
-        website5.setAttribute = ('href', `${member.companies[4].website}`);
+        website5.setAttribute('href', `${member.companies[4].website}`);
         membership5.textContent = `Membership: ${member.companies[4].membership}`;
-        logo5.setAttribute = ('src', url);
-        logo5.setAttribute = ('alt', 'what?');
+        logo5.setAttribute('src', member.companies[4].logo);
+        logo5.setAttribute('alt', `${member.companies[4].name} logo`);
+        logo5.setAttribute('width', '200px');
+        logo5.setAttribute('height', '60px');
         div5.appendChild(logo5);
         div5.appendChild(name5);
         div5.appendChild(address5);
@@ -167,10 +177,12 @@ const displayMembers = (members) => {
         address6.textContent = `${member.companies[5].address}`;
         phone6.textContent = `${member.companies[5].phone}`;
         website6.textContent = `${member.companies[5].website}`;
-        website6.setAttribute = ('href', `${member.companies[5].website}`);
+        website6.setAttribute('href', `${member.companies[5].website}`);
         membership6.textContent = `Membership: ${member.companies[5].membership}`;
-        logo6.setAttribute = ('src', url);
-        logo6.setAttribute = ('alt', 'what?');
+        logo6.setAttribute('src', member.companies[5].logo);
+        logo6.setAttribute('alt', `${member.companies[5].name} logo`);
+        logo6.setAttribute('width', '200px');
+        logo6.setAttribute('height', '191px');
         div6.appendChild(logo6);
         div6.appendChild(name6);
         div6.appendChild(address6);
@@ -183,10 +195,12 @@ const displayMembers = (members) => {
         address7.textContent = `${member.companies[6].address}`;
         phone7.textContent = `${member.companies[6].phone}`;
         website7.textContent = `${member.companies[6].website}`;
-        website7.setAttribute = ('href', `${member.companies[6].website}`);
+        website7.setAttribute('href', `${member.companies[6].website}`);
         membership7.textContent = `Membership: ${member.companies[6].membership}`;
-        logo7.setAttribute = ('src', url);
-        logo7.setAttribute = ('alt', 'what?');
+        logo7.setAttribute('src', member.companies[6].logo);
+        logo7.setAttribute('alt', `${member.companies[6].name} logo`);
+        logo7.setAttribute('width', '160px');
+        logo7.setAttribute('height', '106px');
         div7.appendChild(logo7);
         div7.appendChild(name7);
         div7.appendChild(address7);
