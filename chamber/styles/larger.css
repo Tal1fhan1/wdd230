@@ -164,6 +164,25 @@
         padding-right: 20px;
     }
 
+    .menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .grid {
+        text-align: center;
+    }
+
+    button {
+        text-align: center;
+        margin: 20px;
+    }
+
+    .grid section {
+        text-align: center;
+    }
+
     .navigation li {
         display: contents;
     }
