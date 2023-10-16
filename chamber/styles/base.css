@@ -113,13 +113,6 @@ section {
     text-align: center;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 5px;
-    align-items: center;
-}
-
 .grid section {
     text-align: center;
 }
@@ -140,19 +133,51 @@ section {
     margin: 0 1rem;
 }
 
-#company1,
-#company2,
-#company3,
-#company4,
-#company5,
-#company6,
-#company7 {
+#company1-grid,
+#company2-grid,
+#company3-grid,
+#company4-grid,
+#company5-grid,
+#company6-grid,
+#company7-grid {
     border: 2px solid #5D5D81;
     text-align: center;
     margin-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
+}
+
+#company-list img {
+    display: none;
+}
+
+#company1-list,
+#company2-list,
+#company3-list,
+#company4-list,
+#company5-list,
+#company6-list,
+#company7-list {
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+
+#company1-list,
+#company3-list,
+#company5-list,
+#company7-list {
+    background-color: #5d5d81a2;
+    color: white;
+    text-align: left;
+    padding-top: 5px;
+}
+
+#company-grid {
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 h3 {

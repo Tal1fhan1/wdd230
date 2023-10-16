@@ -101,19 +101,37 @@
         grid-column: 1/3;
     }
 
-    #company {
+    #company-grid {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         display: grid;
     }
 
-    #company1,
-    #company2,
-    #company3,
-    #company4,
-    #company5,
-    #company6,
-    #company7 {
+    #company1-list,
+    #company2-list,
+    #company3-list,
+    #company4-list,
+    #company5-list,
+    #company6-list,
+    #company7-list {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        display: grid;
+        column-gap: 20px;
+    }
+
+    #company-list a {
+        padding-top: 15px;
+    }
+
+
+    #company1-grid,
+    #company2-grid,
+    #company3-grid,
+    #company4-grid,
+    #company5-grid,
+    #company6-grid,
+    #company7-grid {
         padding-right: 5px;
         padding-left: 5px;
         font-size: 0.8rem;
